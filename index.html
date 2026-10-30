@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Тест на фішинг</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #101827;
+  color: white;
+  text-align: center;
+  padding: 35px 15px;
+}
+.card {
+  background: #1e293b;
+  max-width: 480px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 16px;
+}
+button {
+  background: #2563eb;
+  color: white;
+  border: 0;
+  padding: 14px 25px;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+}
+#result {
+  display: none;
+  margin-top: 25px;
+  color: #86efac;
+  line-height: 1.6;
+}
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>🔐 Перевір себе!</h1>
+  <h2>Чи розпізнаєш ти фішинг?</h2>
+  <p>Перед тобою навчальна демонстрація підозрілого посилання.</p>
+  <p>Не вводь жодних паролів або особистих даних.</p>
+  <button onclick="showResult()">Перевірити посилання</button>
+  <div id="result">
+    <h2>⚠️ Це була навчальна симуляція!</h2>
+    <p>Перш ніж відкривати посилання, перевіряй адресу сайту.</p>
+    <p>Не вводь паролі на невідомих сторінках.</p>
+    <p>Навчання завершено. Твої дані не збиралися.</p>
+  </div>
+</div>
+<script>
+function showResult() {
+  document.getElementById("result").style.display = "block";
+}
+</script>
+</body>
+</html>
